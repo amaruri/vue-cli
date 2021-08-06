@@ -27,7 +27,7 @@ export default {
   methods: {
     async get () {
       const { data } = await this.$req.get(`pokemon/${this.id}`)
-      this.moves = data.moves
+      this.moves = data.move
     }
   }
 }

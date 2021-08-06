@@ -40,7 +40,7 @@ export default {
   methods: {
     async get () {
       const { data } = await this.$req.get(`/pokemon?offset=0&limit=151`)
-      this.list = data.results
+      this.list = data
     }
   }
 }
